@@ -2,6 +2,7 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const PugPlugin = require('pug-plugin');
 
 module.exports = {
     mode: 'development',
@@ -13,35 +14,33 @@ module.exports = {
         assetModuleFilename: 'assets/images/[name][ext]'
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'index.html') })
+        new HtmlWebpackPlugin({
+             template: path.resolve(__dirname, 'index.html'), 
+            // filename: 'index.html', 
+            }),
+            
     ],
     module: {
         rules: [
-            { test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/, },
-            { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+            { test: /\.(scss|css)$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                 type: 'asset/resource'
+                test: /\.pug$/,
+                loader: 'pug-loader',
+            },
+            {
+                test: /\.(png|jpg|gif|svg|woff|woff2|eot|ttf)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/images/[name][ext]'
+                }
             },
         ],
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js', '.css'],
+        extensions: ['.js', '.css'],
     },
     devServer: {
         port: 5000,
         open: true
     }
-    /* module: {
-         rules: [
-             { test: /\.svg$/, use: 'svg-inline-loader' },
-             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-             { test: /\.(js)$/, use: 'babel-loader' }
-         ]
-     },
-     devServer: {
-         static: {
-             directory: path.join(__dirname, '/'), 
-         },
-     },*/
 }
