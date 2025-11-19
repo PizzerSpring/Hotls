@@ -15,10 +15,10 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-             template: path.resolve(__dirname, 'index.html'), 
+            template: path.resolve(__dirname, 'template.pug'),
             // filename: 'index.html', 
-            }),
-            
+        }),
+
     ],
     module: {
         rules: [
@@ -28,11 +28,18 @@ module.exports = {
                 loader: 'pug-loader',
             },
             {
-                test: /\.(png|jpg|gif|svg|woff|woff2|eot|ttf)$/i,
+                test: /\.(png|jpg|gif|woff|woff2|eot|ttf)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'assets/images/[name][ext]'
+                    filename: 'assets/images/[name].[contenthash][ext]'
                 }
+            },
+           {
+                test: /\.svg$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/images/[name].[contenthash][ext]'
+                },
             },
         ],
     },

@@ -16,17 +16,7 @@
   \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("{module.exports = __webpack_require__.p + \"assets/images/Montserrat-Regular.ttf\";\n\n//# sourceURL=webpack://hotls/./assets/fonts/Montserrat-Regular.ttf?\n}");
-
-/***/ }),
-
-/***/ "./assets/images/Logo.svg":
-/*!********************************!*\
-  !*** ./assets/images/Logo.svg ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("{module.exports = __webpack_require__.p + \"assets/images/Logo.svg\";\n\n//# sourceURL=webpack://hotls/./assets/images/Logo.svg?\n}");
+eval("{module.exports = __webpack_require__.p + \"assets/images/Montserrat-Regular.2a2d37bf7680d86811db.ttf\";\n\n//# sourceURL=webpack://hotls/./assets/fonts/Montserrat-Regular.ttf?\n}");
 
 /***/ }),
 
@@ -56,7 +46,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_styles_sty_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/styles/sty.scss */ \"./assets/styles/sty.scss\");\n/* harmony import */ var _assets_images_Logo_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/images/Logo.svg */ \"./assets/images/Logo.svg\");\n/* harmony import */ var _assets_styles_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/styles/style.css */ \"./assets/styles/style.css\");\nconsole.log(12597);\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://hotls/./index.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_styles_sty_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/styles/sty.scss */ \"./assets/styles/sty.scss\");\n/* harmony import */ var _assets_styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/styles/style.css */ \"./assets/styles/style.css\");\nconsole.log(12597);\r\n\r\n\r\n//import LogoImage from './assets/images/Logo.svg';\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://hotls/./index.js?\n}");
 
 /***/ }),
 
