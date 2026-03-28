@@ -16,8 +16,17 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'template.pug'),
-            // filename: 'index.html', 
+            //filename: 'template.html',
         }),
+        new HtmlWebpackPlugin({ 
+            filename: 'registration.html', 
+            template: 'components/registration.pug' 
+        })
+    /*    new HtmlWebpackPlugin({
+            // filename: 'registration.pug',
+            template: path.resolve(__dirname, 'registration.pug'),
+           // filename: 'registration.html'
+        }),*/
 
     ],
     module: {
@@ -28,19 +37,19 @@ module.exports = {
                 loader: 'pug-loader',
             },
             {
-                test: /\.(png|jpg|gif|woff|woff2|eot|ttf)$/i,
+                test: /\.(png|jpg|svg|gif|woff|woff2|eot|ttf)$/i,
                 type: 'asset/resource',
                 generator: {
                     filename: 'assets/images/[name].[contenthash][ext]'
                 }
             },
-           {
-                test: /\.svg$/,
-                type: 'asset/resource',
-                generator: {
-                    filename: 'assets/images/[name].[contenthash][ext]'
-                },
-            },
+            /* {
+                   test: /\.svg$/,
+                   type: 'asset/resource',
+                   generator: {
+                       filename: 'assets/images/[name].[contenthash][ext]'
+                   },
+               },*/
         ],
     },
     resolve: {
