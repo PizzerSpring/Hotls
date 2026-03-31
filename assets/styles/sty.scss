@@ -1,6 +1,5 @@
 .header {
   height: 70px;
-  /*border: 1px solid black;*/
 }
 
 .header-wrapper {
@@ -20,14 +19,28 @@
 }
 
 .list-flex .link {
-  padding: 5px 10px;
+  position: relative;
+  padding: 5px 14px;
   color: rgba(#1F2041, 50%);
+}
+
+.mark::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-right: 3px solid rgba(#1F2041, 50%);
+  border-top: 3px solid rgba(#1F2041, 50%);
+  transform: rotate(135deg);
 }
 
 .list-flex .login {
   display: inline-block;
   padding: 5px 10px;
-  margin-right: 20px;
+  margin: 0 20px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
