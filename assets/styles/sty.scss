@@ -1,7 +1,49 @@
-$font-size: 1rem;
-$font-color: lch(28 99 35);
+.header {
+  height: 70px;
+  /*border: 1px solid black;*/
+}
 
-html {
-  font-size: $font-size;
-  color: $font-color;
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+
+.list-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.list-flex .link {
+  padding: 5px 10px;
+  color: rgba(#1F2041, 50%);
+}
+
+.list-flex .login {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  border: 2px solid #BC9CFF;
+  border-radius: 22px;
+}
+
+.list-flex .registration {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 2px solid #BC9CFF;
+  background: linear-gradient(#BC9CFF);
+  border-radius: 22px;
 }

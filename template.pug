@@ -5,14 +5,18 @@ html(lang= 'ru')
     title= 'Toxin'
   body
     header.header
-       .logo-svg
-         img.logo2(src=require('./assets/images/Logo.svg'), alt='Загрузка SVG изображений с помощью Webpack')
-       ul.navigation
-         li
-         li
-         li 
-         li 
-         li
-         li
-         li  
+      .container
+        .header-wrapper
+          a(href="#")
+            img.logo(src=require('./assets/images/Logo.svg'), alt='No photo') 
+          ul.list-flex
+            li.link О нас
+            li.link Услуги
+            li.link Вакансии
+            li.link Новости
+            li.link Соглашения
+            li.login войти
+            li.registration зарегистрироваться  
+
+       
     
