@@ -1,3 +1,5 @@
+/*_______________________________header_______________________________________*/
+
 .header {
   height: 70px;
 }
@@ -21,6 +23,7 @@
 .list-flex .link {
   position: relative;
   padding: 5px 14px;
+  font-size: 14px;
   color: rgba(#1F2041, 50%);
 }
 
@@ -32,8 +35,8 @@
   right: 0;
   width: 8px;
   height: 8px;
-  border-right: 3px solid rgba(#1F2041, 50%);
-  border-top: 3px solid rgba(#1F2041, 50%);
+  border-right: 2px solid rgba(#1F2041, 50%);
+  border-top: 2px solid rgba(#1F2041, 50%);
   transform: rotate(135deg);
 }
 
@@ -60,3 +63,33 @@
   background: linear-gradient(#BC9CFF);
   border-radius: 22px;
 }
+
+/*_______________________________backgroundMain_______________________________________*/
+
+
+.main-background {
+  background-image: url('../images/backgroundMain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*width: 100vw;*/
+  height: 100vh;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100vh;
+  padding-bottom: 18px;
+  
+}
+
+.main-wrapper-text {
+  font-size: 14px;
+  color: rgba(#1F2041, 75%);
+  line-height: 24px;
+  
+}
+
+/*___________________________________footer________________________________________________*/
