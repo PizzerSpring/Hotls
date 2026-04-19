@@ -6,103 +6,65 @@ html(lang= 'ru')
     footer.footer
       section.footer-big-nav
         .container
-          .footer-text
-            img.logo(src=require('./Logo.svg'), alt='No photo')
-            p.description Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-          nav.footer-map
-            .footer-map-col
-              h3.map-col-title навигация
-              ul.map-col-list
-                li.map-col-item
-                  a.map-col-link О нас
-                li.map-col-item
-                  a.map-col-link Новости
-                li.map-col-item
-                  a.map-col-link Служба поддержки
-                li.map-col-item
-                  a.map-col-link Услуги
+          .footer-wrapper
+            .footer-text
+              img.logo(src=require('./Logo.svg'), alt='No photo')
+              p.description Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+            nav.footer-map
               .footer-map-col
-              h3.map-col-title о нас
-              ul.map-col-list
-                li.map-col-item
-                  a.map-col-link О сервисе
-                li.map-col-item
-                  a.map-col-link Наша команда
-                li.map-col-item
-                  a.map-col-link Вакансии
-                li.map-col-item
-                  a.map-col-link Инвесторы
-            .footer-map-col
-              h3.map-col-title Служба поддержки
-              ul.map-col-list
-                li.map-col-item
-                  a.map-col-link Соглашения
-                li.map-col-item
-                  a.map-col-link Сообщества
-                li.map-col-item
-                  a.map-col-link Связь с нами
-            .footer-map-col
-              h3.map-col-title Подписка
-              p.map-col-text Получайте специальные предложения и новости сервиса      
-              form.map-col-form
-                .form-group
-                  label.form-group__wrapper
-                    .input-wrapper
-                      input.form-group__input(type="email", placeholder="Email")
-                      button.form-group__input-button
-                        img(src=require('./arrow_forward.png'), alt="")                
+                h3.map-col-title навигация
+                ul.map-col-list
+                  li.map-col-item
+                    a.map-col-link(href="#") О нас
+                  li.map-col-item
+                    a.map-col-link(href="#") Новости
+                  li.map-col-item
+                    a.map-col-link(href="#") Служба поддержки
+                  li.map-col-item
+                    a.map-col-link(href="#") Услуги
+              .footer-map-col
+                h3.map-col-title о нас
+                ul.map-col-list
+                  li.map-col-item
+                    a.map-col-link(href="#") О сервисе
+                  li.map-col-item
+                    a.map-col-link(href="#") Наша команда
+                  li.map-col-item
+                    a.map-col-link(href="#") Вакансии
+                  li.map-col-item
+                    a.map-col-link(href="#") Инвесторы
+              .footer-map-col
+                h3.map-col-title служба поддержки
+                ul.map-col-list
+                  li.map-col-item
+                    a.map-col-link(href="#") Соглашения
+                  li.map-col-item
+                    a.map-col-link(href="#") Сообщества
+                  li.map-col-item
+                    a.map-col-link(href="") Связь с нами
+              .footer-map-col
+                h3.map-col-title подписка
+                p.map-col-text Получайте специальные предложения и новости сервиса      
+                form.map-col-form
+                  .form-group
+                    label.form-group__wrapper
+                      .input-wrapper
+                        input.form-group__input(type="email", placeholder="Email")
+                        button.form-group__input-button
+                          img(src=require('./arrow_forward.png'), alt="No icon")                
       section.footer-small-nav
         .container
-          p.footer-copyright Copyright © 2018 Toxin отель. Все права защищены.
-          ul.icons-list
-            li.icons-item
-              a.icons-item-link(href="")
-                img(src=require('./twitter.png'), alt="No icon")
-            li.icons-item
-              a.icons-item-link(href="")
-                img(src=require('./facebook.png'), alt="No icon") 
-            li.icons-item
-              a.icons-item-link(href="")
-                img(src=require('./instagram.png'), alt="No icon")          
-      .container 
-        .footer-wrapper
-          .footer-col
-            a(href="#")
-              img.footer-logo(src=require('./Logo.svg'), alt='No photo')
-            p.footer-logo-text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды» 
-          .footer-col
-            h3.footer-navigation-title навигация
-            ul
-              li
-                a(href="") О нас
-              li  
-                a(href="") Новости
-              li  
-                a(href="") Служба поддержки
-              li    
-                a(href="") Услуги  
-          .footer-col
-            h3.footer-navigation-about о нас
-            ul
-              li
-                a(href="") О сервисе
-              li  
-                a(href="") Наша команда
-              li  
-                a(href="") Вакансии
-              li    
-                a(href="") Инвесторы 
-          .footer-col      
-            h3.footer-navigation-support Служба поддержки
-            ul
-              li
-                a(href="") Соглашения
-              li  
-                a(href="") Сообщества
-              li  
-                a(href="") Связь с нами  
-          .footer-col
-            h3.footer-navigation-subscription Подписка
-            p.footer-navigation-subtext Получайте специальные предложения и новости сервиса
-            label
-              input.footer-form(type="email", placeholder="Email", name="")
+          .footer-wrapper
+            p.footer-copyright Copyright © 2018 Toxin отель. Все права защищены.
+            ul.icons-list
+              li.icons-item
+                a.icons-item-link(href="")
+                  img(src=require('./twitter.png'), alt="No icon")
+              li.icons-item
+                a.icons-item-link(href="")
+                  img(src=require('./facebook.png'), alt="No icon") 
+              li.icons-item
+                a.icons-item-link(href="")
+                  img(src=require('./instagram.png'), alt="No icon")    
+                
+              
